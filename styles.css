@@ -24,6 +24,12 @@ header {
     margin-bottom: 20px;
 }
 
+header .tagline {
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
 main {
     background-color: white;
     padding: 20px;
@@ -33,14 +39,73 @@ main {
 
 section {
     margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
 }
 
 h1, h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+p {
     margin-bottom: 15px;
 }
 
 ul {
     margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: #4a6fa5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.cta-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #4a6fa5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: #3a5a8a;
+}
+
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-info {
+    margin-top: 15px;
 }
 
 footer {
@@ -49,4 +114,14 @@ footer {
     padding: 20px;
     font-size: 0.9em;
     color: #666;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    header, main, section {
+        padding: 15px;
+    }
 }
